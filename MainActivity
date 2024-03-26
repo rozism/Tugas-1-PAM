@@ -1,0 +1,19 @@
+import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Set the name and NIM
+        findViewById<TextView>(R.id.textViewName).text = "John Doe"
+        findViewById<TextView>(R.id.textViewNim).text = "12345678"
+
+        // Set the image
+        findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.your_image)
+    }
+}
